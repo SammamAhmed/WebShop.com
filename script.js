@@ -1,5 +1,4 @@
 const API_BASE = "https://webshop-backend-production-9347.up.railway.app";
-
 // --- Cart logic as before ---
 let cart = JSON.parse(localStorage.getItem('cart')) || {};
 const cartCountElement = document.getElementById('cart-count');
@@ -100,7 +99,7 @@ if (contactForm) {
     const email = contactForm.querySelector('#email').value;
     const message = contactForm.querySelector('#message').value;
     try {
-      const res = await fetch(`${API_BASE}/contact`, {
+      const res = await fetch(`${API_BASE}/api/contact`, { // FIXED
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, message }),
@@ -123,7 +122,7 @@ const reviewsListDiv = document.getElementById('reviews-list');
 async function loadReviews() {
   if (!reviewsListDiv) return;
   try {
-    const res = await fetch(`${API_BASE}/review`);
+    const res = await fetch(`${API_BASE}/api/review`); // FIXED
     if (res.ok) {
       const reviews = await res.json();
       reviewsListDiv.innerHTML = reviews.length
@@ -141,7 +140,7 @@ if (reviewForm) {
     const name = reviewForm.querySelector('#reviewer-name').value;
     const message = reviewForm.querySelector('#review-message').value;
     try {
-      const res = await fetch(`${API_BASE}/review`, {
+      const res = await fetch(`${API_BASE}/api/review`, { // FIXED
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, message }),
@@ -159,6 +158,7 @@ if (reviewForm) {
   });
   loadReviews();
 }
+
 
 // --- Product Search Bar ---
 const productSearch = document.getElementById('product-search');
