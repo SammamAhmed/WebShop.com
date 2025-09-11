@@ -1,4 +1,13 @@
 const API_BASE = "https://webshop-backend-production-9347.up.railway.app";
+
+
+const cors = require('cors');
+
+const corsOptions = {
+  origin: 'https://sammamahmed.github.io'
+};
+
+app.use(cors(corsOptions));
 // --- Cart logic as before ---
 let cart = JSON.parse(localStorage.getItem('cart')) || {};
 const cartCountElement = document.getElementById('cart-count');
@@ -187,3 +196,4 @@ if (hamburger && navLinks) {
   });
 
 }
+
