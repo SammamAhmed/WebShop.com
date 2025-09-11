@@ -1,4 +1,5 @@
-const API_BASE = "https://webshop-com.fly.dev"; 
+const API_BASE = "https://webshop-backend-production-9347.up.railway.app";
+
 // --- Cart logic as before ---
 let cart = JSON.parse(localStorage.getItem('cart')) || {};
 const cartCountElement = document.getElementById('cart-count');
@@ -184,4 +185,5 @@ if (hamburger && navLinks) {
   hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
   });
+
 }
