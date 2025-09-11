@@ -1,5 +1,4 @@
-const API_BASE = "http://mongodb+srv://sammamahmed:<K6nNEteroAXrGo9o>@cluster0.pmnr1p3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/api"; 
-// mongodb+srv://sammamahmed:<K6nNEteroAXrGo9o>@cluster0.pmnr1p3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+const API_BASE = "https://webshop-com.fly.dev"; 
 // --- Cart logic as before ---
 let cart = JSON.parse(localStorage.getItem('cart')) || {};
 const cartCountElement = document.getElementById('cart-count');
