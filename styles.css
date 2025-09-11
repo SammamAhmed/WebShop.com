@@ -434,7 +434,23 @@ footer {
   margin-top: 10px;
 }
 
-/* --- Remove Button for Cart --- */
+#reviews-list {
+  margin-top: 20px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fafafa;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+#reviews-list div {
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eee;
+}
+
 .remove-item-btn {
   margin-left: 8px;
   background: #ff9900;
@@ -449,6 +465,7 @@ footer {
 .remove-item-btn:hover {
   background: #e68a00;
 }
+
 
 /* Animation for popup */
 @keyframes fadeInOut {

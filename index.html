@@ -1,9 +1,13 @@
+<!-- 
+ sammamahmed
+ brd3gilPWyQE1VaH 
+ -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>WebShop.com</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -15,16 +19,15 @@
             <div class="logo">
                 <a href="#">WebShop.com</a>
             </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="#">About</a></li>
-        </ul>
-
-        <button class="cart-btn" id="cart-btn">
-        Cart <span id="cart-count">0</span>
-        </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <button class="cart-btn" id="cart-btn">
+                Cart <span id="cart-count">0</span>
+            </button>
         </nav>
         <div class="hero">
             <h1>Shop the Best Deals on Your Favorite Products!</h1>
@@ -60,28 +63,25 @@
 
     <!-- Review Section -->
     <section class="reviews">
-    <h2>Liked us? Leave a review for us to improve</h2>
-    <p>We value your feedback! Share your thoughts below:</p>
-
-    <!-- Formspree Contact Form -->
-    <form class="review-form" action="https://formspree.io/f/xjkeleak" method="POST">
-        <label for="reviewer-name">Your Name</label>
-        <input type="text" id="reviewer-name" name="name" placeholder="Enter your name" required>
-
-        <label for="review-message">Your Review</label>
-        <textarea id="review-message" name="message" rows="4" placeholder="Write your review here..." required></textarea>
-
-        <button type="submit" class="buy-btn">Submit Review</button>
-    </form>
+        <h2>Liked us? Leave a review for us to improve</h2>
+        <p>We value your feedback! Share your thoughts below:</p>
+        <form class="review-form">
+            <label for="reviewer-name">Your Name</label>
+            <input type="text" id="reviewer-name" name="name" placeholder="Enter your name" required>
+            <label for="review-message">Your Review</label>
+            <textarea id="review-message" name="message" rows="4" placeholder="Write your review here..." required></textarea>
+            <button type="submit" class="buy-btn">Submit Review</button>
+        </form>
+        <div id="reviews-list"></div>
     </section>
 
     <!-- Floating Cart Menu -->
     <div id="cart-menu" class="cart-menu">
-    <h3>Your Cart</h3>
-    <div id="cart-items"></div>
-    <div id="cart-total"></div>
-    <button id="remove-all-btn" class="buy-btn" style="background:#ff9900;margin-bottom:12px;">Remove All</button>
-    <button id="close-cart-menu" class="buy-btn">Close</button>
+        <h3>Your Cart</h3>
+        <div id="cart-items"></div>
+        <div id="cart-total"></div>
+        <button id="remove-all-btn" class="buy-btn" style="background:#ff9900;margin-bottom:12px;">Remove All</button>
+        <button id="close-cart-menu" class="buy-btn">Close</button>
     </div>
 
     <!-- Footer Section -->
