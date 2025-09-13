@@ -1,4 +1,4 @@
-const API_BASE = "https://webshop-backend-production-9347.up.railway.app";
+const API_BASE = "";
 
 // --- Cart logic as before ---
 let cart = JSON.parse(localStorage.getItem('cart')) || {};
